@@ -1,0 +1,27 @@
+.intro-slider-1 .banner-content {
+	width: 62%;
+}
+
+.header-middle {
+	padding: 1rem 6.4rem;
+}
+
+.sticky-header.fixed img {
+	max-width: 62%;
+}
+.sticky-header.fixed h1 {
+	margin-top: 0 !important;
+}
+
+.bg-section-7 {
+	background-image: url(../../images/bg1.jpg);
+	background-position: 50% bottom;
+}
+
+.btn::before {
+	    background-color: #b8d36e;	
+}
+
+.btn span {
+	color: #fff;
+}
