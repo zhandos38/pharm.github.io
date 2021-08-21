@@ -22,6 +22,7 @@
 	<!-- Main CSS File -->
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 	
 </head>
 <body>
@@ -45,8 +46,8 @@
         <header class="header header-sign">
             <div class="header-middle header-middle-simple">
                 <div class="header-left">
-                    <a href="index-2.html" class="logo">
-                        <h1 class="mb-0"><img src="assets/images/logo.png" alt="Caremed Logo" width="185" height="48"></h1>
+                    <a href="index.html" class="logo">
+                        <h1 class="mt-8 mb-0"><img src="images/logo.png" alt="clinpharm Logo" width="180" height="48"></h1>
                     </a>
                 </div>
             </div>
@@ -62,44 +63,75 @@
                 background image is added through css and can be modified in the _sections.scss file
                 the image is added to the .bg-section-18 class.
             -->
-            <div class="height-100vh login-section signup-section position-relative bg-section bg-section-18">
-                <form class="sign-form">
-                    <div class="form-heading text-center">
-                        <h4 class="sub-title ls-n-20 line-height-1 mb-3">Create Profile.</h4>
-                        <span class="heading-desc">
-                            Join over 1 million people on Caremed.
-                        </span>
+            <div class="login-section signup-section position-relative bg-section bg-section-18">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form class="sign-form">
+                                <div class="form-heading text-center">
+                                    <h4 class="sub-title ls-n-20 line-height-1 mb-3">Создать профиль</h4>
+                                    <span class="heading-desc">
+                                        Присоединяйтесь к нам в общество
+                                    </span>
+                                </div>
+                                <div class="form-content">
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Ф.И.О</h6>
+                                        <input type="text" class="form-control" focused required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Телефон</h6>
+                                        <input type="text" class="form-control" placeholder="7(000) 000-00-00" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Email</h6>
+                                        <input type="email" class="form-control" placeholder="example@gmail.com" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Пароль</h6>
+                                        <input type="password" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Должность</h6>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Специальность</h6>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Город</h6>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Трудовая биография и образование</h6>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Дата рождения</h6>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light">
+                                        <h6 class="input-title">Прирепление документов об образовании и сертификатов</h6>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="input-group input-light input-check term-privacy mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="terms">
+                                        <label class="custom-control-label" for="terms">
+                                            Даю согласия на обработку личных данных
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-form btn-secondary-color">
+                                        <span>Создать профиль</span>
+                                    </button>
+                                    <div class="term-privacy d-flex justify-content-center">
+                                        <span class="line-height-1">Уже зарегистрированы?</span><a class="line-height-1" href="login.html">Войти</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-content">
-                        <div class="input-group input-light">
-                            <h6 class="input-title">Email</h6>
-                            <input type="email" class="form-control" placeholder="example@gmail.com" required>
-                        </div>
-                        <div class="input-group input-light">
-                            <h6 class="input-title">Date of Birth</h6>
-                            <input type="text" class="form-control" placeholder="mm/dd/yy" required>
-                        </div>
-                        <div class="input-group input-light">
-                            <h6 class="input-title">Password</h6>
-                            <input type="password" class="form-control" required>
-                        </div>
-                        <div class="input-group input-light input-check term-privacy mt-2">
-                            <input type="checkbox" class="custom-control-input" id="terms">
-                            <label class="custom-control-label" for="terms">
-                                I agree to
-                                <a href="#">Terms of Use</a>
-                                and
-                                <a href="#">Privacy Policy</a>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-form btn-secondary-color">
-                            <span>Create Profile</span>
-                        </button>
-                        <div class="term-privacy d-flex justify-content-center">
-                            <span class="line-height-1">Already have an account?</span><a class="line-height-1" href="login.html">Sign in</a>
-                        </div>
-                    </div>
-                </form>
+                </div>
                 <div class="foreground-img">
 					<img src="assets/images/backgrounds/background-2-fore.png" alt="image">					
 				</div>

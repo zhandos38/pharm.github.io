@@ -25,3 +25,46 @@
 .btn span {
 	color: #fff;
 }
+
+.intro-slide {
+	padding: 18.6rem 0 21.5rem 0;
+}
+.banner-img {
+	width: 38%;
+}
+
+.map-section-1 {
+	padding-bottom: 0;
+}
+
+.sign-form {
+	position: inherit !important;
+	left: 0;
+	top: 0;
+	-webkit-transform: inherit;
+}
+
+.bg-section-18 {
+    background-attachment: fixed;
+}
+.signup-section {
+    padding: 12rem 0 20rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-img {
+  	display: none;
+  }
+  .intro-slide {
+  	padding-bottom: 10rem;
+  }
+  .header-logo {
+  	width: 66px;
+  }
+  .banner-content {
+  	margin-top: 1rem;
+  }
+  .logo h1 {
+  	margin-top: 1rem !important;
+  }
+}
